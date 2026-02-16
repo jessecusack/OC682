@@ -6,8 +6,6 @@ project:
   # description:
   # keywords: []
   authors: ["Jesse Cusack"]
-  # github:
-  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
     - file: intro.md
     - file: math_intro.md
@@ -22,8 +20,3 @@ site:
   # nav:
   #   - title: OC682
   #     url: intro.md
-
-execute:
-  enabled: true
-  timeout: 300
-  allow_errors: true 

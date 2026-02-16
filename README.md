@@ -13,6 +13,14 @@ uv sync
 uv run nbstripout --install
 ```
 
+## Viewing the site on your local machine
+
+```
+uv run jupyter book start
+```
+
+The go to http://localhost:3000 in your browsers.
+
 ## Stripping note book outputs
 
 We don't want to clog git with figure outputs. 
