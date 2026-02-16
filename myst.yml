@@ -1,0 +1,24 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 70709c0f-da87-4ddc-aa2a-0346e108c4b8
+  # title: OC682 Data Analysis in the Time and Space Domains
+  # description:
+  # keywords: []
+  authors: ["Jesse Cusack"]
+  # github:
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: intro.md
+    - file: math_intro.md
+    - file: nonlinear_regression.ipynb
+    
+site:
+  template: book-theme
+  options:
+    logo_text: OC682
+    # favicon: favicon.ico
+    # logo: site_logo.png
+  # nav:
+  #   - title: OC682
+  #     url: intro.md
