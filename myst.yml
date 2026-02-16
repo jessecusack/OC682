@@ -22,3 +22,8 @@ site:
   # nav:
   #   - title: OC682
   #     url: intro.md
+
+execute:
+  enabled: true
+  timeout: 300
+  allow_errors: true 

@@ -1,3 +1,7 @@
+# OC682
+
+The site is [live via pages](jessecusack.github.io/OC682). 
+
 # Development notes
 
 ## For collaborators
