@@ -41,16 +41,21 @@ for html_file in build_dir.rglob("*.html"):
             skip_div["aria-label"] = "Skip links"
             modified = True
 
-    # Fix 5: Footer content ("Made with MyST") should be in landmark
-    for span in soup.select("span.self-center.ml-2.text-sm"):
-        if span.string and "MyST" in span.string:
-            # Wrap in footer if not already in one
-            if not span.find_parent("footer"):
-                parent = span.parent
-                if parent and not parent.get("role"):
-                    parent["role"] = "contentinfo"
-                    parent["aria-label"] = "Site credits"
-                    modified = True
+    # Fix 5: "Made with MyST" link - remove invalid role, wrap in footer
+    for link in soup.select("a.myst-made-with-myst"):
+        # Remove invalid role from link
+        if link.get("role"):
+            del link["role"]
+            modified = True
+
+        # Wrap in footer if not already in one
+        if not link.find_parent("footer"):
+            parent = link.parent
+            if parent and parent.name not in ["footer"]:
+                wrapper = soup.new_tag("footer")
+                wrapper["aria-label"] = "Site credits"
+                link.wrap(wrapper)
+                modified = True
 
     if modified:
         html_file.write_text(str(soup))
