@@ -74,4 +74,4 @@ for html_file in build_dir.rglob("*.html"):
         html_file.write_text(str(soup))
         print(f"  ✅ Fixed: {html_file}")
     else:
-        print(f"  ⏭️ No changes needed")
+        print("  ⏭️ No changes needed")
