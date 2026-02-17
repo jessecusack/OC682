@@ -10,7 +10,7 @@ Clone this repository and use uv to create the development environment.
 
 ```
 uv sync
-uv run nbstripout --install   # Explained below.
+uv run nbstripout --install   # Explained below
 ```
 
 ## Viewing the site on your local machine
@@ -19,7 +19,7 @@ uv run nbstripout --install   # Explained below.
 uv run jupyter book start
 ```
 
-The go to http://localhost:3000 in your browsers.
+Then go to http://localhost:3000 in your browser.
 
 ## Stripping note book outputs
 
