@@ -148,6 +148,7 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "beautifulsoup4" },
+    { name = "nbformat" },
     { name = "nbstripout" },
     { name = "ruff" },
 ]
@@ -165,6 +166,7 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "beautifulsoup4", specifier = ">=4.14.3" },
+    { name = "nbformat", specifier = ">=5.10.4" },
     { name = "nbstripout", specifier = ">=0.9.0" },
     { name = "ruff", specifier = ">=0.15.1" },
 ]

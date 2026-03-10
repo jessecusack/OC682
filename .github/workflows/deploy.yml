@@ -40,6 +40,9 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
+      - name: Hide notebook code by default
+        run: uv run python scripts/hide-code.py
+
       - name: Build HTML Assets
         run: uv run jupyter book build --execute --html
 
